@@ -1,3 +1,17 @@
+# 忽略备份资源文件
+base/*
+
+# 忽略lib文件
+lib/*
+
+# 忽略构建文件
+out/*
+
+#忽略运行文件夹
+run/*
+
+
+
 # Compiled class file
 *.class
 
