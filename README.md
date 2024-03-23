@@ -8,6 +8,14 @@ A Minecraft 1.8.9 Chinese PVP Client based on Tritium
 
 感谢[GitHub - Canelex/DragonWingsMod](https://github.com/Canelex/DragonWingsMod) 龙翼组件
 
+## 使用方法
+
+1.前往release页下载发布文件，如Chocolate_r1.zip
+
+2.解压该文件，将得到的名为Chocolate的文件夹移动到你的.minecraft文件夹的versions目录下
+
+3.使用任意一款启动器选择游戏版本为Chocolate启动
+
 ## 为什么改名叫Chocolate？
 
 单纯觉得好听一些
@@ -26,7 +34,7 @@ A Minecraft 1.8.9 Chinese PVP Client based on Tritium
 
 6. 修复了Apache_log4j2(CVE-2021-44228)漏洞，见[知乎 [漏洞复现]Apache_log4j2（CVE-2021-44228）_](https://zhuanlan.zhihu.com/p/462419319)，[Minecraft官网公告](https://www.minecraft.net/en-us/article/important-message--security-vulnerability-java-edition)
 
-## 使用方法
+## 源代码使用方法
 
 1.参考MCP项目mcp918的方式获取运行库文件和依赖库文件
 
