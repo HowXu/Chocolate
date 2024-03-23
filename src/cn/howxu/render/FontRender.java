@@ -1,4 +1,4 @@
-package cn.howxu;
+package cn.howxu.render;
 
 import me.imflowow.tritium.core.Tritium;
 import me.imflowow.tritium.utils.language.LangUtils;

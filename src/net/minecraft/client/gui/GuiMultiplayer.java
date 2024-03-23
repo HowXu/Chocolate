@@ -21,7 +21,8 @@ import org.lwjgl.input.Keyboard;
 public class GuiMultiplayer extends GuiScreen implements GuiYesNoCallback {
 	private static final Logger logger = LogManager.getLogger();
 	private final OldServerPinger oldServerPinger = new OldServerPinger();
-	private GuiScreen parentScreen;
+	public GuiScreen parentScreen;
+	//这里要改成public
 	private ServerSelectionList serverListSelector;
 	private ServerList savedServerList;
 	private GuiButton btnEditServer;

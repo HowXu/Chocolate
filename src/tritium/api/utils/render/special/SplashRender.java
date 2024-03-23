@@ -1,13 +1,10 @@
 package tritium.api.utils.render.special;
 
 import java.awt.Color;
-import java.awt.Font;
 
-import cn.howxu.FontRender;
-import me.imflowow.tritium.utils.language.LangUtils;
+import cn.howxu.render.FontRender;
 import org.lwjgl.LWJGLException;
 
-import me.imflowow.tritium.core.Tritium;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.ScaledResolution;
@@ -15,7 +12,6 @@ import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.shader.Framebuffer;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.ResourceLocation;
-import tritium.api.utils.StringUtils;
 
 public class SplashRender {
 

@@ -1,6 +1,5 @@
-package cn.howxu;
+package cn.howxu.module;
 
-import me.imflowow.tritium.core.Tritium;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;

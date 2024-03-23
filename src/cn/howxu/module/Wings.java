@@ -1,4 +1,4 @@
-package cn.howxu;
+package cn.howxu.module;
 
 import net.minecraft.entity.player.EntityPlayer;
 import tritium.api.module.Module;

@@ -215,6 +215,7 @@ public class ChineseLanguage implements Language {
 		langMap.put("Add dragon wings to your character.","为您的角色添加龙翼");
 		langMap.put("Colored","是否开启颜色");
 		langMap.put("Scale","翅膀大小");
+		langMap.put("Server List","服务器列表");
 
 
 		langMap.put("Edit", "编辑");
