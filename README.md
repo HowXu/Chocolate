@@ -34,7 +34,9 @@ A Minecraft 1.8.9 Chinese PVP Client based on Tritium
 
 6. 修复了Apache_log4j2(CVE-2021-44228)漏洞，见[知乎 [漏洞复现]Apache_log4j2（CVE-2021-44228）_](https://zhuanlan.zhihu.com/p/462419319)，[Minecraft官网公告](https://www.minecraft.net/en-us/article/important-message--security-vulnerability-java-edition)
 
-7.添加了龙翼渲染功能和游戏内切换服务器的功能
+7.添加了龙翼渲染功能
+
+8.添加了游戏内切换服务器的功能
 
 ## 源代码使用方法
 
