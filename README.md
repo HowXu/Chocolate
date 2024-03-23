@@ -34,6 +34,8 @@ A Minecraft 1.8.9 Chinese PVP Client based on Tritium
 
 6. 修复了Apache_log4j2(CVE-2021-44228)漏洞，见[知乎 [漏洞复现]Apache_log4j2（CVE-2021-44228）_](https://zhuanlan.zhihu.com/p/462419319)，[Minecraft官网公告](https://www.minecraft.net/en-us/article/important-message--security-vulnerability-java-edition)
 
+7.添加了龙翼渲染功能和游戏内切换服务器的功能
+
 ## 源代码使用方法
 
 1.参考MCP项目mcp918的方式获取运行库文件和依赖库文件
@@ -43,10 +45,6 @@ A Minecraft 1.8.9 Chinese PVP Client based on Tritium
 3.根目录下新建run目录，在run目录下新建natives文件夹，在natives文件夹下放置原本在版本文件夹下的.dll动态库文件(可以在运行配置中查看原因)
 
 4.按照需求进行调试或者构建
-
-## Chocolate未来会更新的内容
-
-1.对右ShiftUI进行重构美化(其实已经改过一次，但是没有注释四个xy参数看不出来哪个是关于position的，调试半天搞炸了): )
 
 ## 作者的话
 
