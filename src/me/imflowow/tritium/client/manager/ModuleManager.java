@@ -37,12 +37,13 @@ public class ModuleManager {
 		Class[] globals = { ClientConfig.class, ContainerAnimations.class, ScreenBackground.class, Chat.class,
 				ChunkAnimator.class, AnimatedView.class,Translator.class };
 		// modules 添加了Wings
-		Class[] modules = { MotionBlur.class, Sprint.class, OldAnimations.class, Fullbright.class, Wings.class,
+		Class[] modules = { MotionBlur.class, Sprint.class, OldAnimations.class, Fullbright.class,
 				BlockAnimations.class, Perspective.class, WorldTime.class, ChatCopy.class, MoreParticles.class,
 				ItemPhysic.class, LowFire.class, KeyStrokes.class, BlockOverlay.class, ArmorDisplay.class,
 				Crosshair.class, ReachDisplay.class, CPSDisplay.class, PotionDisplay.class, CustomParticles.class,
 				EnchantEffect.class, DuelInfo.class, FPSDisplay.class, ClockDisplay.class, PingDisplay.class,
-				CoordDisplay.class, SelfHealth.class, AutoGG.class, DamageDealt.class, CustomScoreboard.class };
+				CoordDisplay.class, SelfHealth.class, AutoGG.class, DamageDealt.class, CustomScoreboard.class, Wings.class};
+		//添加Wings组件
 
 		for (Class class_ : globals) {
 			this.register(class_);

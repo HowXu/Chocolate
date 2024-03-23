@@ -12,8 +12,8 @@ import tritium.api.module.value.utils.HSBColor;
 
 public class ColorValue extends Value<HSBColor> {
 
-	BooleanValue rainbow;
-	NumberValue rainbowspeed;
+	public BooleanValue rainbow;
+	public NumberValue rainbowspeed;
 
 	public ColorValue(String label, HSBColor value) {
 		super(label, value);

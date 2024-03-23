@@ -16,8 +16,10 @@ public class WingLayer implements LayerRenderer<AbstractClientPlayer> {
 	@Override
 	public void doRenderLayer(AbstractClientPlayer entitylivingbaseIn, float p_177141_2_, float p_177141_3_,
 			float partialTicks, float p_177141_5_, float p_177141_6_, float p_177141_7_, float scale) {
+		//这里是龙翼的渲染位置
 		EntityPlayer player = entitylivingbaseIn;
 		PlayerHandler playerHandler = PlayerHandler.getFromPlayer(player);
+
 		if (playerHandler.hasWing && playerHandler.settings != null && playerHandler.wing != null
 				&& !player.isInvisible()) {
 			playerHandler.wing.renderWings(player, playerHandler.settings, partialTicks);

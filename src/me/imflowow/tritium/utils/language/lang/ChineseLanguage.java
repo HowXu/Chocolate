@@ -115,6 +115,7 @@ public class ChineseLanguage implements Language {
 		langMap.put("You can make your particles colorful.", "使你的粒子颜色多姿多彩！");
 		langMap.put("Color", "颜色");
 
+
 		langMap.put("TextColor", "文本颜色");
 		langMap.put("BackgroundColor", "背景颜色");
 		langMap.put("BackgroundRectColor", "背景方框颜色");
@@ -208,6 +209,13 @@ public class ChineseLanguage implements Language {
 
 		langMap.put("Target not found...", "没有找到目标...");
 		langMap.put("Reach Display", "攻击距离");
+
+		//Add HowXu
+		langMap.put("DragonWings","龙翼");
+		langMap.put("Add dragon wings to your character.","为您的角色添加龙翼");
+		langMap.put("Colored","是否开启颜色");
+		langMap.put("Scale","翅膀大小");
+
 
 		langMap.put("Edit", "编辑");
 		langMap.put("Global", "全局");

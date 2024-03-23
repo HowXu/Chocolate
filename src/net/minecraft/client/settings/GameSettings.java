@@ -196,7 +196,7 @@ public class GameSettings
 
     /** Game settings language */
     public String language = "zh_CN"; //默认语言设置为中文
-    public boolean forceUnicodeFont;
+    public boolean forceUnicodeFont = true; //强制使用unicode
     public int ofFogType = 1;
     public float ofFogStart = 0.8F;
     public int ofMipmapType = 0;
@@ -290,7 +290,7 @@ public class GameSettings
         this.lastServer = "";
         this.fovSetting = 70.0F;
         this.language = "zh_CN"; //默认语言设置为中文
-        this.forceUnicodeFont = false;
+        this.forceUnicodeFont = true; //默认为Unicode
         this.mc = mcIn;
         this.optionsFile = new File(optionsFileIn, "options.txt");
 
@@ -332,7 +332,7 @@ public class GameSettings
         this.lastServer = "";
         this.fovSetting = 70.0F;
         this.language = "zh_CN"; //默认语言设置为中文
-        this.forceUnicodeFont = false;
+        this.forceUnicodeFont = true; //默认为Unicode
     }
 
     /**
@@ -3104,7 +3104,7 @@ public class GameSettings
         this.particleSetting = 0;
         this.heldItemTooltips = true;
         this.useVbo = false;
-        this.forceUnicodeFont = false;
+        this.forceUnicodeFont = true; //强制Unicode渲染会好看很多
         this.ofFogType = 1;
         this.ofFogStart = 0.8F;
         this.ofMipmapType = 0;

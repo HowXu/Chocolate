@@ -49,6 +49,7 @@ public abstract class GuiEntity extends RenderEntity {
 
 		GL11.glScaled(scaled, scaled, 1);
 		this.draw((position.getValue().getX(this.getWidth()) / scaled), (position.getValue().getY(this.getHeight()) / scaled));
+		//从代码实现上这个是上层普适性的draw定位 也就是说不能为每个模块设置默认初始位置
 		GL11.glScaled(1 / scaled, 1 / scaled, 1);
 	}
 

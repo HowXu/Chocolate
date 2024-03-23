@@ -95,12 +95,12 @@ public class ClientListener {
 
 		if (event.getKey() == Keyboard.KEY_RSHIFT) {
 			//监听到右键事件后打开一个gui
-			ELog.log_info("Listening KEY_RSHIFT","begin mc.displayGuiScreen(gui);");
+			//ELog.log_info("Listening KEY_RSHIFT","begin mc.displayGuiScreen(gui);");
 			//System.exit(0);
 			mc.displayGuiScreen(gui);
-			ELog.log_info("Listening KEY_RSHIFT gui toString",gui.toString());
-			ELog.log_info("Listening KEY_RSHIFT gui.getModuleList toString",gui.getModuleList().toString());
-			ELog.log_info("Listening KEY_RSHIFT","finish mc.displayGuiScreen(gui);");
+			//ELog.log_info("Listening KEY_RSHIFT gui toString",gui.toString());
+			//ELog.log_info("Listening KEY_RSHIFT gui.getModuleList toString",gui.getModuleList().toString());
+			//ELog.log_info("Listening KEY_RSHIFT","finish mc.displayGuiScreen(gui);");
 		}
 	}
 
