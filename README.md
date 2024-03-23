@@ -1,6 +1,9 @@
 # Chocolate
 
-A Minecraft 1.8.9 Chinese PVP Client based on Tritium
+A Minecraft 1.8.9 Chinese PVP Client based on Tritium-X
+
+![主菜单](./main.png)
+![功能列表](./function.png)
 
 ## 使用方法
 
