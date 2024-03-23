@@ -18,9 +18,6 @@ public class FontManager {
     public MCFontRenderer load16 = this.arial16;
     public MCFontRenderer load14 = this.arial14;
 
-    //Howxu additions
-    public MCFontRenderer load12 = this.arial12;
-
 
     public MCFontRenderer arialBold10 = new MCFontRenderer(this.fontFromTTF("arialBold.ttf", 10, Font.PLAIN), true,
             true);
@@ -45,6 +42,9 @@ public class FontManager {
     public MCFontRenderer logo32 = new MCFontRenderer(this.fontFromTTF("logo.ttf", 32, Font.PLAIN), true, true);
     public MCFontRenderer logo36 = new MCFontRenderer(this.fontFromTTF("logo.ttf", 36, Font.PLAIN), true, true);
     public MCFontRenderer logo42 = new MCFontRenderer(this.fontFromTTF("logo.ttf", 42, Font.PLAIN), true, true);
+
+    //Add Howxu
+    public MCFontRenderer load12 = this.load14;
 
     public void loadUnicodeRender() {
         this.load14 = null;
