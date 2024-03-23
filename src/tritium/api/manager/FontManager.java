@@ -51,9 +51,9 @@ public class FontManager {
         this.load16 = null;
         this.load18 = null;
         System.gc();
-        this.load14 = new MCFontRenderer(this.fontFromTTF("msyh.ttf", 14, Font.PLAIN), true, true, true, 0, -1);
-        this.load16 = new MCFontRenderer(this.fontFromTTF("msyh.ttf", 16, Font.PLAIN), true, true, true, 0, -1);
-        this.load18 = new MCFontRenderer(this.fontFromTTF("msyh.ttf", 18, Font.PLAIN), true, true, true, 0, -1);
+        this.load14 = new MCFontRenderer(this.fontFromTTF("OPPOSans-Regular.ttf", 14, Font.PLAIN), true, true, true, 0, -1);
+        this.load16 = new MCFontRenderer(this.fontFromTTF("OPPOSans-Regular.ttf", 16, Font.PLAIN), true, true, true, 0, -1);
+        this.load18 = new MCFontRenderer(this.fontFromTTF("OPPOSans-Regular.ttf", 18, Font.PLAIN), true, true, true, 0, -1);
     }
 
     public void reloadEnglishRender() {
