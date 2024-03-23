@@ -4,11 +4,11 @@ A Minecraft 1.8.9 Chinese PVP Client based on Tritium
 
 ## 使用方法
 
-1.前往release页下载发布文件，如Chocolate_r1.zip
+1. 前往release页下载发布文件，如Chocolate_r1.zip
 
-2.解压该文件，将得到的名为Chocolate的文件夹移动到你的.minecraft文件夹的versions目录下
+2. 解压该文件，将得到的名为Chocolate的文件夹移动到你的.minecraft文件夹的versions目录下
 
-3.使用任意一款启动器选择游戏版本为Chocolate启动
+3. 使用任意一款启动器选择游戏版本为Chocolate启动
 
 ## 为什么改名叫Chocolate？
 
