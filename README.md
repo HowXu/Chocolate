@@ -26,7 +26,7 @@ A Minecraft 1.8.9 Chinese PVP Client based on Tritium
 
 5. 修改了版本json文件中authlib.jar文件来源(与原版1.8.9一致)，也算是去掉一个诟病后面很久的设计。版本json文件附在仓库中
 
-6. 修复了Apache_log4j2(CVE-2021-44228)漏洞，见[知乎 [漏洞复现]Apache_log4j2（CVE-2021-44228）_](https://zhuanlan.zhihu.com/p/462419319)，[Minecraft官网公告](https://www.minecraft.net/en-us/article/important-message--security-vulnerability-java-edition)
+6. 修复了Apache_log4j2(CVE-2021-44228)漏洞，见[知乎 [漏洞复现] Apache_log4j2（CVE-2021-44228）](https://zhuanlan.zhihu.com/p/462419319)，[Minecraft官网公告](https://www.minecraft.net/en-us/article/important-message--security-vulnerability-java-edition)
 
 7.添加了龙翼渲染功能
 
