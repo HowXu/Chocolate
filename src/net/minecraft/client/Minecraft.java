@@ -641,7 +641,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage {
 		Display.setResizable(true);
 		//这里是设置标题
 		//Display.setTitle("Tritium-X");
-		Display.setTitle("Chocolate | Minecraft 1.8.9");
+		Display.setTitle("Chocolate 1.8.9");
 
 		try {
 			Display.create((new PixelFormat()).withDepthBits(24));

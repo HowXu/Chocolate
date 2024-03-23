@@ -5,6 +5,7 @@ import java.awt.datatransfer.StringSelection;
 import java.io.File;
 import java.io.IOException;
 
+import cn.howxu.ELog;
 import org.lwjgl.input.Keyboard;
 
 import me.imflowow.tritium.client.cape.ClientCape;
@@ -93,7 +94,13 @@ public class ClientListener {
 		});
 
 		if (event.getKey() == Keyboard.KEY_RSHIFT) {
+			//监听到右键事件后打开一个gui
+			ELog.log_info("Listening KEY_RSHIFT","begin mc.displayGuiScreen(gui);");
+			//System.exit(0);
 			mc.displayGuiScreen(gui);
+			ELog.log_info("Listening KEY_RSHIFT gui toString",gui.toString());
+			ELog.log_info("Listening KEY_RSHIFT gui.getModuleList toString",gui.getModuleList().toString());
+			ELog.log_info("Listening KEY_RSHIFT","finish mc.displayGuiScreen(gui);");
 		}
 	}
 
@@ -111,7 +118,8 @@ public class ClientListener {
 				lib.classloader = null;
 				lib.setLoaded(false);
 				System.gc();
-				File directory = new File(new File(Minecraft.getMinecraft().mcDataDir, "Tritium-X"), "libraries");
+				File directory = new File(new File(Minecraft.getMinecraft().mcDataDir, "chocolate"), "libraries");
+				//存的是什么我也不知道
 				File [] files = directory.listFiles();
 				if (!directory.exists()) {
 					directory.mkdir();

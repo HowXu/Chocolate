@@ -44,7 +44,7 @@ public class MainMenu extends GuiScreen {
     Deconverge textDeconverge;
 
     //这里是设置标题
-    String TitleText = "Chocolate Minecraft";
+    String TitleText = "Chocolate";
     int TitleText_Lenth = Tritium.instance.getFontManager().ariaBoldl48.getStringWidth(TitleText);
 
     //int title_textDeconverge_height = this.height / 5;
@@ -70,7 +70,7 @@ public class MainMenu extends GuiScreen {
 
         //这里负责绘制标题和设置位置
         //标题设置位置和抖动特效有关
-        //见声明title_textDeconverge_height和title_textDeconverge_width
+        //见声明title_text Deconverge_height和title_textDeconverge_width 用参数动态写就不会出现bug
         Tritium.instance.getFontManager().ariaBoldl48.drawString(TitleText, this.width / 2 - TitleText_Lenth / 2, this.height / 5,
                 this.getColor(2));
 

@@ -52,8 +52,11 @@ public class ClickGui extends GuiScreen {
 
 	public ClickGui() {
 		this.alpha = 0;
-		this.positionX = 600;
-		this.positionY = 100;
+
+		this.positionX = 600; //20 //600
+		this.positionY = 100; //20 //100
+		//如果默认尺寸太小这个会炸的，必须要中以上
+		//初始化值代表了位置?
 		this.hasClosed = true;
 		this.hasInited = false;
 		this.wholeScreenScissor = new Scissor(0, 0, this.width, this.height);

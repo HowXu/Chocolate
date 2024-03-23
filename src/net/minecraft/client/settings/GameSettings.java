@@ -75,6 +75,7 @@ public class GameSettings
 
     /** GUI scale values */
     private static final String[] GUISCALES = new String[] {"options.guiScale.auto", "options.guiScale.small", "options.guiScale.normal", "options.guiScale.large"};
+
     private static final String[] PARTICLES = new String[] {"options.particles.all", "options.particles.decreased", "options.particles.minimal"};
     private static final String[] AMBIENT_OCCLUSIONS = new String[] {"options.ao.off", "options.ao.min", "options.ao.max"};
     private static final String[] STREAM_COMPRESSIONS = new String[] {"options.stream.compression.low", "options.stream.compression.medium", "options.stream.compression.high"};
@@ -187,13 +188,14 @@ public class GameSettings
     public float saturation;
 
     /** GUI scale */
-    public int guiScale;
+    //这里设置guiScale的初始值为2 实现启动游戏即为中尺寸 解决ClickUI无法展开的bug
+    public int guiScale = 2;
 
     /** Determines amount of particles. 0 = All, 1 = Decreased, 2 = Minimal */
     public int particleSetting;
 
     /** Game settings language */
-    public String language;
+    public String language = "zh_CN"; //默认语言设置为中文
     public boolean forceUnicodeFont;
     public int ofFogType = 1;
     public float ofFogStart = 0.8F;
@@ -287,7 +289,7 @@ public class GameSettings
         this.difficulty = EnumDifficulty.NORMAL;
         this.lastServer = "";
         this.fovSetting = 70.0F;
-        this.language = "en_US";
+        this.language = "zh_CN"; //默认语言设置为中文
         this.forceUnicodeFont = false;
         this.mc = mcIn;
         this.optionsFile = new File(optionsFileIn, "options.txt");
@@ -329,7 +331,7 @@ public class GameSettings
         this.difficulty = EnumDifficulty.NORMAL;
         this.lastServer = "";
         this.fovSetting = 70.0F;
-        this.language = "en_US";
+        this.language = "zh_CN"; //默认语言设置为中文
         this.forceUnicodeFont = false;
     }
 
@@ -480,6 +482,7 @@ public class GameSettings
 
         if (settingsOption == GameSettings.Options.GUI_SCALE)
         {
+            //参考setOptionValue在 设置guiScale的值即为设置大小
             this.guiScale += value;
 
             if (GuiScreen.isShiftKeyDown())
@@ -488,6 +491,9 @@ public class GameSettings
             }
 
             DisplayMode displaymode = Config.getLargestDisplayMode();
+            //我猜这个大小应该是和上面的数组对应的 2应该是中尺寸
+            //(Config.getDisplayModes())[2];
+            //这里应该是默认使用最大的显示模式
             int i = displaymode.getWidth() / 320;
             int j = displaymode.getHeight() / 240;
             int k = Math.min(i, j);

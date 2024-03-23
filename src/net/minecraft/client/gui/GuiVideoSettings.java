@@ -87,6 +87,7 @@ public class GuiVideoSettings extends GuiScreenOF
      */
     protected void actionPerformed(GuiButton button) throws IOException
     {
+        //调用actionPerformed传入参数为1 意义为数组向前推进
         this.actionPerformed(button, 1);
     }
 
@@ -107,7 +108,9 @@ public class GuiVideoSettings extends GuiScreenOF
             if (p_actionPerformed_1_.id < 200 && p_actionPerformed_1_ instanceof GuiOptionButton)
             {
                 this.guiGameSettings.setOptionValue(((GuiOptionButton)p_actionPerformed_1_).returnEnumOptions(), p_actionPerformed_2_);
+                //参考setOptionValue的调用 p_actionPerformed_2_ = 1 会让GuiScale的数组推进一位
                 p_actionPerformed_1_.displayString = this.guiGameSettings.getKeyBinding(GameSettings.Options.getEnumOptions(p_actionPerformed_1_.id));
+                //这里只是画按钮上的东西
             }
 
             if (p_actionPerformed_1_.id == 200)
