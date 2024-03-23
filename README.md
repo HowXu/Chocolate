@@ -2,12 +2,6 @@
 
 A Minecraft 1.8.9 Chinese PVP Client based on Tritium
 
-## 源代码感谢
-
-感谢[GitHub - ImFl0wow/Tritium-Open](https://github.com/ImFl0wow/Tritium-Open) 源代码
-
-感谢[GitHub - Canelex/DragonWingsMod](https://github.com/Canelex/DragonWingsMod) 龙翼组件
-
 ## 使用方法
 
 1.前往release页下载发布文件，如Chocolate_r1.zip
@@ -48,6 +42,10 @@ A Minecraft 1.8.9 Chinese PVP Client based on Tritium
 
 4.按照需求进行调试或者构建
 
-## 作者的话
+## 源代码感谢
 
-1.8.9 PVP早就走下坡路了，改这个端无非实现很久之前的一个愿望而已。
+感谢[GitHub - ImFl0wow/Tritium-Open](https://github.com/ImFl0wow/Tritium-Open) 源代码
+
+感谢[GitHub - Canelex/DragonWingsMod](https://github.com/Canelex/DragonWingsMod) 龙翼组件
+
+感谢[OPPO](https://www.coloros.com/article/A00000050/) OPPOSans字体提供
