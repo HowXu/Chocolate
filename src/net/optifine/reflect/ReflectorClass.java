@@ -37,6 +37,7 @@ public class ReflectorClass implements IResolvable
             }
             catch (ClassNotFoundException var2)
             {
+                //这里是卡顿的报错来源
                 Log.log("(Reflector) Class not present: " + this.targetClassName);
             }
             catch (Throwable throwable)

@@ -58,7 +58,7 @@ public class MainMenu extends GuiScreen {
         //textDeconverge = new Deconverge(title_textDeconverge_width, title_textDeconverge_height, TitleText_Lenth, 24);
         //这行不能加在drawScreen
 
-        String text;
+        String text1;
         int lenth;
         new Rect(0, 0, this.width, this.height, this.getColor(0), RenderType.Position).draw();
         super.drawScreen(mouseX, mouseY, partialTicks);
@@ -116,9 +116,11 @@ public class MainMenu extends GuiScreen {
         }
 
 
-        text = Tritium.instance.getLanguagemanager().getTextRender().getText("Contribution by ") + authors.toString();
+        text1 = Tritium.instance.getLanguagemanager().getTextRender().getText("Developed by ") + authors.toString();
         //这里插入了作者信息
-        //Tritium.instance.getLanguagemanager().getTextRender().getFontRender(SizeType.Size14).drawCenteredString("Minecraft 1.8.9",35, this.height - 7, this.getColor(2));
+        Tritium.instance.getLanguagemanager().getTextRender().getFontRender(SizeType.Size14).drawCenteredString(text1,text1.length() * 2 - 8, this.height - 12, this.getColor(2));
+        String text2 = "Rebuild By Github/HowXu";
+        Tritium.instance.getLanguagemanager().getTextRender().getFontRender(SizeType.Size14).drawCenteredString(text2,text2.length() * 2 - 4,this.height - 5,this.getColor(2));
 
 
 //		Tritium.instance.getFontManager().chinese18.drawStringWithShadow("你好 Hello Здравствыйте こんにちは 안녕하세요.", 2, 2, -1);
@@ -172,7 +174,10 @@ public class MainMenu extends GuiScreen {
         //每个按钮大致是半高度 + 按钮大小 * 上方的按钮个数 + 40分之1的高度差距
         double indent_width = this.width - 80 - (double) this.width / 40;
         //indent 缩进
-        buttons.add(new FlatMainButton("Single Player", new ClickableRect(indent_width, (double) this.height / 2 - 30, 80, 30,
+        //位置x y 长度x y
+
+
+        buttons.add(new FlatMainButton("Single Player", new ClickableRect(indent_width,(double) this.height / 2 - 30, 80, 30,
                 this.getColor(1), Rect.RenderType.Expand, () -> {
             this.mc.displayGuiScreen(new GuiSelectWorld(this));
             this.mc.getSoundHandler()
