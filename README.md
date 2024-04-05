@@ -36,7 +36,7 @@ A Minecraft 1.8.9 Chinese PVP Client based on Tritium-X
 
 8. 添加了游戏内切换服务器的功能
 
-9. 使用OPPOSans平替原有的微软雅黑字体减少游戏文件大小
+9. 使用方正舒黑平替原有的微软雅黑字体减少游戏文件大小
 
 ## 源代码使用方法
 
