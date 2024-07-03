@@ -2,6 +2,8 @@
 
 A Minecraft 1.8.9 Chinese PVP Client based on Tritium-X
 
+**Attention**: 因为MCP项目的特殊性，没有协议能够适配本项目，src源文件将以zip形式上传，请clone后自行解压
+
 ![主菜单](./main.png)
 ![功能列表](./function1.png)
 ![功能列表](./function2.png)
