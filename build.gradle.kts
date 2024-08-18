@@ -12,7 +12,7 @@ buildscript{
         maven { url = uri("https://www.jitpack.io") }
     }
     dependencies {
-        classpath("com.github.howxu:chocolate_gradle:v1.3")
+        classpath("com.github.howxu:chocolate_gradle:v1.3-fix1")
     }
 }
 
