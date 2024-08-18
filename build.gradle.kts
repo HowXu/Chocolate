@@ -12,7 +12,7 @@ buildscript{
         maven { url = uri("https://www.jitpack.io") }
     }
     dependencies {
-        classpath("com.github.howxu:chocolate_gradle:v1.3-fix1")
+        classpath("com.github.howxu:chocolate_gradle:v1.4")
     }
 }
 
@@ -23,7 +23,7 @@ tasks.withType<JavaCompile>{
 }
 
 group = "cn.howxu.chocolate"
-version = "2.1"
+version = "2.2"
 
 repositories {
     mavenCentral()
