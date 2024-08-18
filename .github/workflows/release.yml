@@ -22,14 +22,14 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v3
 
-      - name: Initialize Gradle
-        run: ./gradlew.bat check
-
       - name: Submodule init
         run: git submodule init
 
       - name: Submodule update
         run: git submodule update
+
+      - name: Initialize Gradle
+        run: ./gradlew.bat check
 
       - name: Build Archive
         run: ./gradlew.bat buildArch
