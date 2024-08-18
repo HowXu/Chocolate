@@ -39,4 +39,4 @@ jobs:
         with:
           token: ${{ secrets.TOKEN }}
           files: |
-            ./cache/Chocolate.zip
+            ./build/cache/Chocolate.zip
