@@ -1,0 +1,33 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+            distribution: 'zulu'
+            java-version: '8'
+
+      - name: Initialize Gradle
+        run: ./gradlew check
+
+      - name: Build Archive
+        run: ./gradlew buildArch
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          token: ${{ secrets.TOKEN }}
+          files: |
+            ./cache/Chocolate.zip

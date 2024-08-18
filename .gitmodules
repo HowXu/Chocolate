@@ -1,0 +1,6 @@
+[submodule "src/main/java/net"]
+	path = src/main/java/net
+	url = git@github.com:HowXuVSCode/Chocolate_mcp_src.git
+[submodule "src/main/java/javax"]
+	path = src/main/java/javax
+	url = git@github.com:HowXuVSCode/Chocolate_javax_src.git
