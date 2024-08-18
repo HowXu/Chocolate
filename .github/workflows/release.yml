@@ -25,6 +25,12 @@ jobs:
       - name: Initialize Gradle
         run: ./gradlew.bat check
 
+      - name: Submodule init
+        run: git submodule init
+
+      - name: Submodule update
+        run: git submodule update
+
       - name: Build Archive
         run: ./gradlew.bat buildArch
 
